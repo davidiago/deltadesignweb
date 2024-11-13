@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    background: linear-gradient(135deg, #1c0281, #1a8dd5);
+    margin: 0;
+    padding: 60px 0 60px 0; 
+    line-height: 0.9;
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+    font-size: 0.2rem; 
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Cabeçalho */
+.header {
+    background: linear-gradient(135deg, #082047, #1a8dd5);
+    color: #fff; 
+    padding: 1rem 0.5rem; 
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 1px 0px 20px rgb(13, 79, 232); 
+    transition: background 0.3s ease; 
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 4rem; 
+    letter-spacing: 0.9px; 
+    animation: fadeIn 1s ease-in-out;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0; 
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem; 
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #4ebaca; 
+}
+
+/* Botão de Ação no Cabeçalho */
+.header .cta-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #25cbde;
+    color: #082047;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.header .cta-button:hover {
+    background-color: #ffd700;
+}
+
+/* Animação para a entrada suave */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Seções de conteúdo */
+.content {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: rgb(226, 226, 226);
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.content ul li {
+    padding: 5px 0;
+    font-size: 1.3rem;
+}
+
+.imagem-sobre {
+    width: 30%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+/* Contato */
+.contact-info {
+    margin: 20px 0;
+}
+
+.contact-info p {
+    font-size: 1.4rem;
+    margin: 5px 0;
+}
+
+.contact-info i {
+    color: #3498db;
+    margin-right: 10px;
+}
+
+.social-links a {
+    font-size: 1.3rem;
+    margin: 0 10px;
+    color: #3498db;
+}
+
+.social-links i {
+    margin-right: 5px;
+}
+
+.social-links a:hover {
+    color: #2980b9;
+}
+
+/* Rodapé */
+.footer {
+    background: linear-gradient(135deg, #082149, #1a8dd5); 
+    color: rgb(253, 254, 255);
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0px 0px 20px rgba(78, 17, 244, 0.938);
+    font-size: 1.3rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .content h2 {
+        font-size: 2rem;
+    }
+
+    .social-links a {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
